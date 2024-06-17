@@ -21,11 +21,11 @@ func (c conta) formatacao() conta {
 	fs := "Detalhe da conta \n"
 	var total float64 = 0
 
-	for k,v := range c.itens{
+	for k, v := range c.itens {
 		fs += fmt.Sprintf("%v....R$ %0.2f\n", k+":", v)
 		total += v
 	}
 
-	fs += fmt.Sprintf("%v....%0.2f","total",total)
+	fs += fmt.Sprintf("%v....%0.2f", "total", total)
 	return fs
 }
